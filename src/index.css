@@ -8,7 +8,13 @@
 body {
   font-family: Handjet;
   font-size: 200%;
+  color: #e0e9c4;
+  
+  text-align: center;
+  background-color: #252525;
 }
+
+
 
 .footer-container {
   display: flex;

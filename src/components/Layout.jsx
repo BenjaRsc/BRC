@@ -4,9 +4,8 @@ export default function Layout(props) {
     return (
         <>
             <header>
-                <div class="nes-container with-title is-centered">
-                    <h2>Benjamín Rojas</h2>
-                    <p>Estudiante de Ingeniería Informática en Busca de Práctica</p>
+                <div class="nes-container">
+                    <h2>Benjamín Rojas Campaña: Estudiante de Ingeniería Informática en Busca de Práctica</h2> 
                 </div>
             </header>
 

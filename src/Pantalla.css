@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap');
+
+.pantalla {
+  background-color: #4b564d;
+  margin: auto;
+}
+
+.carta {
+  float: left;
+  column-gap: 30px;
+  width: 25%;
+  height: 350px;
+  /* padding: 90px; */
+  margin-bottom: 20px;
+  background-color: #9aa57c;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.seleccionado {
+  float: left;
+  width: 25%;
+  /* padding: 90px; */
+  height: 350px;
+  background-color: #e0e9c4;
+  animation: seleccionado 0.4s;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@keyframes seleccionado {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateY(-20px);
+  }
+
+}
+
+
+.titulo {
+  color: #e0e9c4;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+}
+
+.fila{
+  display: flex;
+  flex-direction: row;
+  color: #0f0f1b;
+  gap: 20px;
+}
+
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button:hover {
+  background-color: #e0e9c4;
+}
+
+body {
+  overflow-x: hidden
+}
