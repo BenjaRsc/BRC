@@ -28,8 +28,8 @@ export default function Pantalla() {
   const [vista, setVista] = useState(false);
   const [Componente, setComponente] = useState(componentes[0]);
   
-  function ActualizarComponente(){
-    setComponente(prevComponente => componentes[seleccion]);
+  function ActualizarComponente(indice){
+    setComponente(prevComponente => componentes[indice]);
   }
 
   function Mover(ind){
@@ -48,7 +48,7 @@ export default function Pantalla() {
     const inputTecla = (e) => {
       if (e.key === "ArrowRight" || e.key === "d") MoverDerecha()
       if (e.key === "ArrowLeft" || e.key === "a") MoverIzquierda()
-      if (e.key === "Enter" || e.key === "z") colocarVista()
+      if (e.key === "Enter" || e.key === "z") colocarVista(seleccion)
     };
 
     window.addEventListener("keydown", inputTecla);
@@ -56,9 +56,9 @@ export default function Pantalla() {
   });
 
 
-  function colocarVista(){
+  function colocarVista(indice){
+    ActualizarComponente(indice)
     setVista(v => v ? false : true);
-    ActualizarComponente()
   }
 
  
@@ -68,15 +68,14 @@ export default function Pantalla() {
         {CARTAS[seleccion].titulo}
       </h1>
 
-
       <div className='fila' style={{translate: 450 + (-300 * seleccion)}}>
         {
           CARTAS.map((carta, indice) =>
             <>
             <button className={(seleccion === indice ? 'seleccionado' : 'carta')} onClick={() => Mover(indice)}>
               <p>{carta.titulo}</p>
-              <button className="" onClick={() => colocarVista(indice)}>
-                Ver más
+              <button className="nes-btn" onClick={() => colocarVista(indice)}>
+<i class="hn hn-angle-up-solid"></i>
               </button>
             </button>
             </>
@@ -87,7 +86,7 @@ export default function Pantalla() {
       {vista &&(
         <div className="">
           <div className="detalle detalle-contenido">
-            <button onClick={() => colocarVista()}>
+            <button onClick={() => colocarVista(seleccion)}>
               <i class="fa-solid fa-xmark"></i>
             </button>
             <Componente key={seleccion}/>

@@ -3,26 +3,12 @@ export default function Proyectos() {
     <div className="">
         <div>Proyectos</div>
 
-        <div>Herramientas</div>
-        <ul>
-            <li>Excel</li>
-            <li>Word</li>
-            <li>Figma</li>
-            <li>Clip Studio Paint</li>
-            <li>Aseprite</li>
-            <li>Adobe Premiere</li>
-        </ul>
+        <h1>AulaGet</h1>
 
-        <div>Desarrollo</div>
+        <h1>Makau</h1>
 
-        <ul>
-            <li>Python</li>
-            <li>Bash</li>
-            <li>Django</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
+
+
     </div>
   )
 }
