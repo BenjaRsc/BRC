@@ -10,7 +10,6 @@
   column-gap: 30px;
   width: 25%;
   height: 350px;
-  /* padding: 90px; */
   margin-bottom: 20px;
   background-color: #9aa57c;
   box-sizing: border-box;
@@ -20,7 +19,6 @@
 .seleccionado {
   float: left;
   width: 25%;
-  /* padding: 90px; */
   height: 350px;
   background-color: #e0e9c4;
   animation: seleccionado 0.4s;
@@ -34,7 +32,6 @@
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateY(-20px);
   }
-
 }
 
 
@@ -66,5 +63,27 @@ button:hover {
 }
 
 body {
-  overflow-x: hidden
+  overflow: hidden
+}
+
+.detalle {
+  color: #9aa57c;
+}
+
+.detalle-fondo {
+    background: rgba(49,49,49,0.8);
+}
+
+.detalle-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* line-height: 1.4; */
+    background: #252525;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 80vw;
+    min-width: 80vw;
+    min-height: 60vh;
 }

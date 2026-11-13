@@ -9,6 +9,7 @@ export default function Proyectos() {
             <li>Word</li>
             <li>Figma</li>
             <li>Clip Studio Paint</li>
+            <li>Aseprite</li>
             <li>Adobe Premiere</li>
         </ul>
 

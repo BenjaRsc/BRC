@@ -4,7 +4,7 @@ export default function Layout(props) {
     return (
         <>
             <header>
-                <div class="nes-container">
+                <div class="title">
                     <h2>Benjamín Rojas Campaña: Estudiante de Ingeniería Informática en Busca de Práctica</h2> 
                 </div>
             </header>

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap');
 @import "tailwindcss";
+@import '@hackernoon/pixel-icon-library/fonts/iconfont.css';
 
 .title {
-  font-size: 300%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 body {
@@ -13,8 +15,6 @@ body {
   text-align: center;
   background-color: #252525;
 }
-
-
 
 .footer-container {
   display: flex;
