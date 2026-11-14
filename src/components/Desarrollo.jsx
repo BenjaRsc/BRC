@@ -2,14 +2,15 @@ export default function Desarrollo() {
   return (
     <>
     <h1>Desarrollo</h1>
-        <ul>
-            <li>Python</li>
-            <li>Bash</li>
-            <li>Django</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
+
+        <div className="grid grid-cols-2 gap-4">
+            <div>Python</div>
+            <div>Bash</div>
+            <div>Django</div>
+            <div>HTML/CSS</div>
+            <div>JavaScript</div>
+            <div>React</div>
+        </div>
     </>
   )
 }

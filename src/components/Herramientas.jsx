@@ -1,11 +1,11 @@
-import {File, Figma, PenSquare, Video} from '../../node_modules/pixelarticons/react'
+import {File, Figma, PenSquare, Video, Github} from '../../node_modules/pixelarticons/react'
 
 export default function Herramientas() {
   return (
     <>
         <h1>Herramientas</h1>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-3 gap-3">
             <div className="">
                 <File className='title'/>
                 <ul className="">
@@ -29,6 +29,11 @@ export default function Herramientas() {
             <div className="">
                 <Video/>
                 Adobe Premiere
+            </div>
+
+            <div className="">
+                <Github/>
+                Git
             </div>
         </div>
     </>
