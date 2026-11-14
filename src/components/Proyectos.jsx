@@ -1,11 +1,22 @@
 export default function Proyectos() {
   return (
     <div className="">
-        <div>Proyectos</div>
+        <h1>Proyectos</h1>
 
-        <h1>AulaGet</h1>
+        <div className="grid grid-cols-2 gap-4">
 
-        <h1>GitK</h1>
+          <div className="">
+            <h2>AulaGet</h2>
+
+          </div>
+
+          <div className="">
+            <h2>GitK</h2>
+
+          </div>
+
+        </div>
+
 
 
 

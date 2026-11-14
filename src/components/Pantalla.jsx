@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "../Pantalla.css";
-import Perfil from "./Perfil";
+import Cv from "./CV";
 import Proyectos from "./Proyectos"
 import Desarrollo from "./Desarrollo"
 import Herramientas from "./Herramientas"
@@ -8,14 +8,14 @@ import Herramientas from "./Herramientas"
 
 
 const CARTAS = [
-  { id: "Perfil", titulo: "Perfil Profesional", imagen: ""},
+  { id: 0, titulo: "CV", imagen: ""},
   { id: 1, titulo: "Proyectos", imagen: ""},
   { id: 2, titulo: "Desarrollo", imagen: ""},
   { id: 3, titulo: "Herramientas", imagen: ""},
 ];
 
 const componentes = [
-  Perfil,
+  Cv,
   Proyectos,
   Desarrollo,
   Herramientas,
