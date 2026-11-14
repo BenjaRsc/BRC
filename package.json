@@ -13,6 +13,7 @@
     "@hackernoon/pixel-icon-library": "^1.1.0",
     "@tailwindcss/vite": "^4.3.5",
     "nes.css": "^2.2.1",
+    "pixelarticons": "^2.4.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "tailwindcss": "^4.3.5"

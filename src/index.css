@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap');
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 @import '@hackernoon/pixel-icon-library/fonts/iconfont.css';
 
-.title {
+
+/* .title {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
+} */
 
 body {
   font-family: Handjet;
