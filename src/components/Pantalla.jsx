@@ -50,11 +50,9 @@ export default function Pantalla() {
       if (e.key === "ArrowLeft" || e.key === "a") MoverIzquierda()
       if (e.key === "Enter" || e.key === "z") colocarVista(seleccion)
     };
-
     window.addEventListener("keydown", inputTecla);
     return () => window.removeEventListener("keydown", inputTecla);
   });
-
 
   function colocarVista(indice){
     ActualizarComponente(indice)
@@ -72,10 +70,10 @@ export default function Pantalla() {
         {
           CARTAS.map((carta, indice) =>
             <>
-            <button className={(seleccion === indice ? 'seleccionado' : 'carta')} onClick={() => Mover(indice)}>
+            <button tabIndex={-1} className={(seleccion === indice ? 'seleccionado' : 'carta')} onClick={() => Mover(indice)} onKeyDown={(event) => {event.preventDefault();}}>
               <p>{carta.titulo}</p>
-              <button className="nes-btn" onClick={() => colocarVista(indice)}>
-<i class="hn hn-angle-up-solid"></i>
+              <button className="" onClick={() => colocarVista(indice)}>
+                <i class="hn hn-angle-up-solid"></i>
               </button>
             </button>
             </>
@@ -101,8 +99,6 @@ export default function Pantalla() {
         <button onClick={() => MoverDerecha()}>
             <i class="hn hn-angle-right-solid"></i>
         </button>
-
-
 
     </div>
   );

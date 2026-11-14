@@ -5,7 +5,7 @@ export default function Proyectos() {
 
         <h1>AulaGet</h1>
 
-        <h1>Makau</h1>
+        <h1>GitK</h1>
 
 
 
